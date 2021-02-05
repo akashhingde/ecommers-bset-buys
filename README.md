@@ -8,8 +8,23 @@ Use the package manager pip to install requirements library.
 pip3 install -r requirements.txt
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## How To Run Server Program File
+To perform following command
 
-Please make sure to update tests as appropriate.
+Step 1:-
+```bash
+python3 app.py
+```
+Step 2:-
+Open the browser and hit this url http://0.0.0.0:5000/
+
+Enter product name, size(how many product you want to search), sort by(Price low to high, high to low, relevance/featured, new arrivals (default is
+relevance/featured), price range.
+After that click on submit button.
+
+## Output
+In Downloaded excel file in sheet1 all the products inforamtion available as per your
+input and in sheet2 have best deal.
+
+
 
