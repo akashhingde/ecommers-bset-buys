@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/download" method="POST">
+        Product Name: <input type="text" name="product_name" id=""> Size: <input type="number" name="size" id=""> Sort By:
+        <select name="sort_by" id="">
+            <option value="low_to_high">Low to High</option>
+            <option value="high_to_low">High to Low</option>
+            <option value="newely_first">Newest First</option>
+            <option value="relevance">relevance/featured</option>
+        </select> Price Range:
+        <input type="number" name="price_range_from" id="">
+        <input type="number" name="price_range_to" id=""> <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
