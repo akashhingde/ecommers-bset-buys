@@ -1,0 +1,11 @@
+if you want to run program thrn follow the following steps.
+1. run the command
+    pip3 install -r requirements.txt
+
+2. Run server file
+    python3 app.py
+
+3. open chrome and go to http://0.0.0.0:5000
+    Enter product name, size(how many product you want to search), sort by(Price low to high, high to low, relevance/featured, new arrivals (default is
+    relevance/featured), price range.
+    After that click on submit button.
