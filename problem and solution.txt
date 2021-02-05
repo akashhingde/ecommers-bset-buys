@@ -1,0 +1,56 @@
+Programming Language :- Python
+Web Framework :- Flask
+scraping library :- requests, BeautifulSoup
+handling excel library:- openpyxl, pandas, xlsxwriter
+
+
+Problem 1:​ Take search name as input and generate the output file
+        You should generate the txt/excel file containing the product name with the link, source (Flipkart/Amazon),
+        price, product details [like model no, delivery time], category of product, etc (you can pick important
+        details bonus points for creativity).
+
+Solution :- Basicsally user take the product name as a input. Based on that input my code
+        return best deal product as a excel format.
+    
+
+Problem 2: ​ Take arguments input and search product on the basis of these filters
+            a. Number of products ​ (default is 10 and max is 50)
+            b. Sort by ​ Price low to high, high to low, relevance/featured, new arrivals (default is
+            relevance/featured)
+            c. Price range​ (default is no limit)
+            d. Delivery Pincode​ (default should be 400072).
+        
+Solution :- user can also take the no of products, sort products, price range​ as a input to
+            get a better deal.
+
+
+Problem 3: ​ The browser scrapping behavior should be as close to user behavior as possible (you need
+        to be creative on this how you will implement it) [it should be like the user is searching for products on
+        Amazon/flipkart].
+
+Solution :- Basicsally we use python requests library for that scraping hide from user.
+
+Problem 4:​ Need to generate another sheet that gives the lowest rate of the product of that particular
+        model across Amazon/Flipkart.
+
+Solution :- In my code fetch the data from Amazon/flipkart sites and compare all the products
+        remove duplicate products and sort the products price wise and finally that products data
+        write into excel sheet.
+
+Problem 5: ​ [Bonus] Flipkart and Amazon have protection against web-crawling which blocks your IP
+        address if they detect any incorrect usage, you will have to implement a logic to ensure your system
+        isnever blacklisted.
+
+Solution :- Some times not get proper data from Amazon/Flipkart sites. In my code i make a logic
+        if the note get proper data from Amazon/flipkart sites wait 5 second and again request for
+        response for that flipkart and Amazon algoritham not detect and they never get blacklist us.
+
+
+Problem 6: ​ [Bonus] Can we add unit test cases for providing the lowest rate of the product?
+
+Solution :- Yes.In my code generate the excel based on user input in sheet1 present all the products
+            and in sheet2 we write sorted and remove duplicate products data.
+
+
+
+
